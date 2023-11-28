@@ -15,7 +15,7 @@
                 <img class="header-section-image-logo" src="/imagens/logo.png" alt="">
                 <div class="header-divisor">
                     <!--                     <button onclick="a()">mudar tema</button> -->
-                    <img class="header-moon" id="botao" src="/svgMoon.svg" alt="svg de lua para mudança de tema"
+                    <img class="header-moon" id="botao" src="/imagens/svgMoon.svg" alt="svg de lua para mudança de tema"
                         onclick="mudarCor()">
                     <nav>
                         <!-- <img id="botao" class="botaoImg" src="/svgMoon.svg" alt="" onclick="mudarCor()"> -->
@@ -104,97 +104,7 @@
         </section>
     </footer>
 
-    <script>
-        var corOriginal = true;
-        function mudarCor() {
-            //define Var para o botão de mudança e var para manipular o body
-            var botao = window.document.getElementById('botao');
-            var body = document.body;
-            var navA1 = window.document.querySelector('#navA1')
-            var navA2 = window.document.querySelector('#navA2')
-            var navA3 = window.document.querySelector('#navA3')
-
-            var mainh1 = window.document.querySelector('#mainh1')
-            var mainp = window.document.querySelector('#mainp')
-
-            var titulo1 = window.document.querySelector('#titulofoto1')
-            var titulo2 = window.document.querySelector('#titulofoto2')
-            var titulo3 = window.document.querySelector('#titulofoto3')
-
-            var legenda1 = window.document.querySelector('#legendafoto1')
-            var legenda2 = window.document.querySelector('#legendafoto2')
-            var legenda3 = window.document.querySelector('#legendafoto3')
-
-            var sech2 = window.document.querySelector('#firstmainh2')
-            var sech22 = window.document.querySelector('#secondmainh2')
-            var secp = window.document.querySelector('#tercp')
-
-
-            var adress = window.document.querySelector('#adress')
-            var copy = window.document.querySelector('#copy')
-            //um condicional para saber quais cores será definida
-
-            if (corOriginal) {
-                botao.setAttribute("src", '/svgSun.svg')
-                body.style.background = '#040404'; // mudança de cor do background
-                navA1.style.color = '#A1A2A3' //mudança de cor do segundo elemento do menu de navegação
-                navA2.style.color = '#A1A2A3' //mudança de cor do terceiro elemento do menu de navegação
-                navA3.style.color = '#A1A2A3' //mudança de cor do quarto elemento do menu de navegação
-
-                mainh1.style.color = '#A1A2A3'
-                mainp.style.color = '#514B54'
-
-                titulo1.style.color = '#A1A2A3'
-                titulo2.style.color = '#A1A2A3'
-                titulo3.style.color = '#A1A2A3'
-
-                legenda1.style.color = '#514B54'
-                legenda2.style.color = '#514B54'
-                legenda3.style.color = '#514B54'
-
-                sech2.style.color = '#A1A2A3'
-                sech22.style.color = '#A1A2A3'
-                secp.style.color = '#A1A2A3'
-
-                adress.style.color = '#A1A2A3'
-                copy.style.color = '#A1A2A3'
-
-                corOriginal = false;
-            } else {
-                botao.setAttribute("src", '/svgMoon.svg')
-                botao.style.fill = 'white'
-                body.style.background = ''
-                navA1.style.color = ''
-                navA2.style.color = ''
-                navA3.style.color = ''
-
-                mainh1.style.color = ''
-                mainp.style.color = ''
-
-                titulo1.style.color = ''
-                titulo2.style.color = ''
-                titulo3.style.color = ''
-
-                legenda1.style.color = ''
-                legenda2.style.color = ''
-                legenda3.style.color = ''
-
-                sech2.style.color = ''
-                sech22.style.color = ''
-                secp.style.color = ''
-
-                adress.style.color = ''
-                copy.style.color = ''
-
-
-                corOriginal = true;
-            }
-
-        }
-
-
-
-    </script>
+    <script src="/script.js"></script>
 </body>
 
 </html>
