@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <section class="header-section">
+            <div class="header-section-div">
+                <img class="header-section-image-logo" src="/imagens/logo.png" alt="">
+                <div class="header-divisor">
+                    <!--                     <button onclick="a()">mudar tema</button> -->
+                    <img class="header-moon" id="botao" src="/svgMoon.svg" alt="svg de lua para mudança de tema"
+                        onclick="mudarCor()">
+                    <nav>
+                        <!-- <img id="botao" class="botaoImg" src="/svgMoon.svg" alt="" onclick="mudarCor()"> -->
+                        <a id="navA1" class="navA" href="">Portfolio</a>
+                        <a id="navA2" class="navA" href="">About us</a>
+                        <a id="navA3" class="navA" href="">Contact</a>
+                    </nav>
+                </div>
+            </div>
+            <img class="header-section-image" src="/imagens/topo.jpg" alt="">
+        </section>
+    </header>
+    <main>
+        <section class="main-section">
+            <h1 id="mainh1" class="main-section-h1">New Fashion Everything Never Enough</h1>
+            <p id="mainp" class="main-section-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                volutpat nisi non
+                ante dictum congue.
+                Cras id
+                odio
+                gravida, posuere velit sed, lacinia mi. Cum sociis natoque penatibus et magnis dis parturient montes,
+                nascetur
+                ridiculus mus. Sed vehicula, ipsum vel congue cursus, mi neque tincidunt enim, egestas porttitor felis
+                neque
+                et
+                risus. Maecenas fringilla hendrerit enim malesuada laoreet. Aenean quis tortor a odio tempus tincidunt.
+                Vivamus
+                rutrum nulla sed metus congue bibendum. Sed ut aliquam purus. Donec odio mauris, commodo sed dignissim
+                vitae,
+                dapibus eget mauris.</p>
+            <div class="images-exemple">
+                <div class="images-div">
+                    <img src="/imagens/modelo1.jpg" alt="">
+                    <span id="titulofoto1">Vest Romasa</span>
+                    <span id="legendafoto1">Strong & charismatic</span>
+                </div>
+                <div class="images-div">
+                    <img src="/imagens/modelo2.jpg" alt="">
+                    <span id="titulofoto2">Jacket Fima</span>
+                    <span id="legendafoto2">Strong Sersonality</span>
+                </div>
+                <div class="images-div">
+                    <img src="/imagens/modelo3.jpg" alt="">
+                    <span id="titulofoto3">Jacket Black Kira</span>
+                    <span id="legendafoto3">Power Fascinating</span>
+                </div>
+            </div>
+        </section>
+        <section class="main-section-2">
+            <img class="main-section-2-image" src="/imagens/bg_detalhe.png" alt="">
+            <div class="main-section-position">
+                <h2 id="firstmainh2" class="main-section-2-h2">Everything Never Enough</h2>
+                <h2 id="secondmainh2" class="main-section-2-h2">Just Fashion</h2>
+                <p id="tercp" class="main-section-2-p">Praesent placerat eros eget lacus ullamcorper, id dapibus ante
+                    vestibulum.
+                    Curabitur quis condimentum
+                    diam.
+                    Duis
+                    aliquet erat vel laoreet tincidunt. Pellentesque vitae varius ligula. Phasellus in nibh tempus,
+                    gravida
+                    justo
+                    et,
+                    suscipit felis. Cras ornare arcu ac sodales tincidunt. Mauris vehicula erat vel ligula porttitor
+                    imperdiet.
+                    Curabitur nec magna urna. Sed porta ex ex, at pulvinar nibh aliquet quis. Integer dapibus congue
+                    vestibulum.
+                    Phasellus bibendum lobortis quam, nec sollicitudin nisl volutpat at.</p>
+            </div>
+            <address id="adress" class="main-address">
+                Call me now for design <br>
+                012-1234-4567
+            </address>
+            <div class="iframe-div">
+                <iframe class="main-frame-maps"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.9665358894963!2d-52.3527103!3d-31.7168091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95104aadd77c98cf%3A0x26422715393944f6!2sR.%20Raul%20Pomp%C3%A9ia%2C%201139%20-%20Tres%20Vendas%2C%20Pelotas%20-%20RS%2C%2096065-400!5e0!3m2!1spt-BR!2sbr!4v1694566442192!5m2!1spt-BR!2sbr"
+                    style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-section">
+            <div class="footer-copy">
+                <span id="copy">Copyright &copy fastfashion.com<span>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        var corOriginal = true;
+        function mudarCor() {
+            //define Var para o botão de mudança e var para manipular o body
+            var botao = window.document.getElementById('botao');
+            var body = document.body;
+            var navA1 = window.document.querySelector('#navA1')
+            var navA2 = window.document.querySelector('#navA2')
+            var navA3 = window.document.querySelector('#navA3')
+
+            var mainh1 = window.document.querySelector('#mainh1')
+            var mainp = window.document.querySelector('#mainp')
+
+            var titulo1 = window.document.querySelector('#titulofoto1')
+            var titulo2 = window.document.querySelector('#titulofoto2')
+            var titulo3 = window.document.querySelector('#titulofoto3')
+
+            var legenda1 = window.document.querySelector('#legendafoto1')
+            var legenda2 = window.document.querySelector('#legendafoto2')
+            var legenda3 = window.document.querySelector('#legendafoto3')
+
+            var sech2 = window.document.querySelector('#firstmainh2')
+            var sech22 = window.document.querySelector('#secondmainh2')
+            var secp = window.document.querySelector('#tercp')
+
+
+            var adress = window.document.querySelector('#adress')
+            var copy = window.document.querySelector('#copy')
+            //um condicional para saber quais cores será definida
+
+            if (corOriginal) {
+                botao.setAttribute("src", '/svgSun.svg')
+                body.style.background = '#040404'; // mudança de cor do background
+                navA1.style.color = '#A1A2A3' //mudança de cor do segundo elemento do menu de navegação
+                navA2.style.color = '#A1A2A3' //mudança de cor do terceiro elemento do menu de navegação
+                navA3.style.color = '#A1A2A3' //mudança de cor do quarto elemento do menu de navegação
+
+                mainh1.style.color = '#A1A2A3'
+                mainp.style.color = '#514B54'
+
+                titulo1.style.color = '#A1A2A3'
+                titulo2.style.color = '#A1A2A3'
+                titulo3.style.color = '#A1A2A3'
+
+                legenda1.style.color = '#514B54'
+                legenda2.style.color = '#514B54'
+                legenda3.style.color = '#514B54'
+
+                sech2.style.color = '#A1A2A3'
+                sech22.style.color = '#A1A2A3'
+                secp.style.color = '#A1A2A3'
+
+                adress.style.color = '#A1A2A3'
+                copy.style.color = '#A1A2A3'
+
+                corOriginal = false;
+            } else {
+                botao.setAttribute("src", '/svgMoon.svg')
+                botao.style.fill = 'white'
+                body.style.background = ''
+                navA1.style.color = ''
+                navA2.style.color = ''
+                navA3.style.color = ''
+
+                mainh1.style.color = ''
+                mainp.style.color = ''
+
+                titulo1.style.color = ''
+                titulo2.style.color = ''
+                titulo3.style.color = ''
+
+                legenda1.style.color = ''
+                legenda2.style.color = ''
+                legenda3.style.color = ''
+
+                sech2.style.color = ''
+                sech22.style.color = ''
+                secp.style.color = ''
+
+                adress.style.color = ''
+                copy.style.color = ''
+
+
+                corOriginal = true;
+            }
+
+        }
+
+
+
+    </script>
+</body>
+
+</html>
