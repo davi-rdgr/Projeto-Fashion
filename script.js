@@ -34,7 +34,7 @@ let corOriginal = true;
             };
 
             if (corOriginal) {
-                botao.setAttribute("src", '/imagens/svgSun.svg');
+                botao.setAttribute("src", 'imagens/svgSun.svg');
                 body.style.background = DarkColor['black'];
                 navA1.style.color = DarkColor['grey01'];
                 navA2.style.color = DarkColor['grey01'];
@@ -53,7 +53,7 @@ let corOriginal = true;
                 legenda2.style.color = DarkColor['grey01'];
                 legenda3.style.color = DarkColor['grey01'];
             } else {
-                botao.setAttribute("src", '/imagens/svgMoon.svg');
+                botao.setAttribute("src", 'imagens/svgMoon.svg');
                 body.style.background = WhiteColor['white'];
                 navA1.style.color = WhiteColor['white'];
                 navA2.style.color = WhiteColor['white'];
