@@ -13,7 +13,7 @@ body {
 
 /* HEADER */
 .header-section {
-    margin-top: 70px;
+    margin-top: 4.375rem;
 }
 
 nav {
@@ -23,24 +23,24 @@ nav {
 .header-section-div {
     display: flex;
     justify-content: space-between;
-    width: 1324px;
+    width: 82.75rem;
     background-color: #081A24;
     margin: 0 auto;
     color: #1A414D;
     align-items: center;
-    height: 40px;
-    padding-left: 50px;
-    padding-right: 50px;
+    height: 2.5rem;
+    padding-left: 3.125rem;
+    padding-right: 3.125rem;
 }
 
 .header-section-image {
     margin: 0 auto;
     display: block;
-    width: 1324px;
+    width: 82.75rem;
 }
 
 .header-moon {
-    height: 20px;
+    height: 1.25rem;
     cursor: pointer;
 }
 
@@ -51,25 +51,23 @@ nav {
 nav a {
     color: #1A414D;
     text-transform: uppercase;
-    letter-spacing: 3px;
-    padding-left: 10px;
-    font-size: 14px;
+    letter-spacing: 0.188rem;
+    padding-left: 0.625rem;
+    font-size: 0.875rem;
 }
 
 nav a:hover {
     color: #035674;
 }
 
-
-
 /* MAIN */
 /* Section 1 */
 .main-section {
     margin: 0 auto;
-    margin-top: 70px;
-    width: 1024px;
+    margin-top: 4.375rem;
+    width: 64rem;
     text-align: center;
-    font-size: 22px;
+    font-size: 1.375rem;
 }
 
 .main-section-h1 {
@@ -78,14 +76,14 @@ nav a:hover {
 
 .main-section-p {
     color: #211F20;
-    margin-top: 30px;
+    margin-top: 1.875rem;
     letter-spacing: 2px;
-    font-size: 17px;
-    line-height: 26px;
+    font-size: 1.063rem;
+    line-height: 1.625rem;
 }
 
 .images-exemple {
-    margin-top: 80px;
+    margin-top: 5rem;
     display: flex;
     justify-content: space-evenly;
 }
@@ -105,30 +103,30 @@ nav a:hover {
 }
 
 .images-div span:nth-child(2) {
-    margin-top: 12px;
+    margin-top: 0.75rem;
     color: #514B54;
-    letter-spacing: 3px;
+    letter-spacing: 0.188rem;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.125rem;
     text-transform: uppercase;
 }
 
 .images-div span:nth-child(3) {
-    margin-top: 10px;
-    font-size: 18px;
+    margin-top: 0.625rem;
+    font-size: 1.125rem;
     color: #A1A2A3;
 }
 
 .main-section-2 {
     margin: 0 auto;
-    width: 1324px;
+    width: 82.75rem;
     position: relative;
 }
 
 .main-section-2-image {
-    margin-top: 70px;
-    width: 1324px;
-    height: 700px;
+    margin-top: 4.375rem;
+    width: 82.75rem;
+    height: 43.75rem;
     position: relative;
     background-color: aqua;
 }
@@ -140,22 +138,22 @@ nav a:hover {
 }
 
 .main-section-2-h2 {
-    font-size: 50px;
+    font-size: 3.125rem;
     color: #ffffff;
 }
 
 .main-section-2-p {
-    margin-top: 40px;
+    margin-top: 2.5rem;
     color: #ffffff;
-    width: 600px;
-    font-size: 20px;
-    line-height: 30px;
+    width: 37.5rem;
+    font-size: 1.25rem;
+    line-height: 1.875rem;
 }
 
 .main-address {
-    margin-top: 50px;
+    margin-top: 3.125rem;
     text-align: center;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: normal;
     font-weight: bold;
     text-transform: uppercase;
@@ -163,35 +161,35 @@ nav a:hover {
 }
 
 .iframe-div {
-    margin-top: 50px;
-    width: 1324px;
+    margin-top: 3.125rem;
+    width: 82.75rem;
     display: flex;
     justify-content: center;
 }
 
 .main-frame-maps {
     text-align: center;
-    width: 1324px;
-    height: 600px;
+    width: 82.75rem;
+    height: 37.5rem;
 }
 
 /* FOOTER */
 
 .footer-section {
     margin: 0 auto;
-    margin-top: 70px;
-    width: 1324px;
-    height: 60px;
+    margin-top: 4.375rem;
+    width: 82.75rem;
+    height: 3.75rem;
     text-align: center;
     background: #001018;
 }
 
 .footer-copy {
-    padding: 20px;
+    padding: 1.25rem;
 }
 
 .footer-copy span {
-    font-size: 16px;
+    font-size: 1rem;
     color: #556A6D;
-    letter-spacing: 4px;
+    letter-spacing: 0.25rem;
 }
