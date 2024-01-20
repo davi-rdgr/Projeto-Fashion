@@ -195,23 +195,3 @@ nav a:hover {
     color: #556A6D;
     letter-spacing: 4px;
 }
-
-
-
-
-
-
-.divai {
-    width: 1000px;
-    gap: 10px;
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(3, 1fr);
-}
-.divizinha {
-    background-color: red;
-    width: 200px;
-    height: 200px;
-    background-image: url(/imagens/modelo1.jpg);
-    background-repeat: no-repeat;
-}
